@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski-Service Anmeldung</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-5">
+        <h1>Willkommen beim Ski-Service</h1>
+        <p>Ihr Partner für professionellen Skiservice</p>
+    </header>
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2>Angebote</h2>
+            <ul>
+                <li>Kleiner Service</li>
+                <li>Grosser Service</li>
+                <li>Rennski-Service</li>
+                <li>Bindung montieren und einstellen</li>
+                <li>Fell zuschneiden</li>
+                <li>Heisswachsen</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Service-Anmeldung</h2>
+            <form id="registrationForm" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Kundenname</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Telefon</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="priority" class="form-label">Priorität</label>
+                    <select class="form-select" id="priority" required>
+                        <option value="low">Tief</option>
+                        <option value="standard">Standard</option>
+                        <option value="express">Express</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="service" class="form-label">Dienstleistung</label>
+                    <select class="form-select" id="service" required>
+                        <option value="small_service">Kleiner Service</option>
+                        <option value="large_service">Grosser Service</option>
+                        <option value="race_service">Rennski-Service</option>
+                        <option value="binding_setup">Bindung montieren und einstellen</option>
+                        <option value="skin_cut">Fell zuschneiden</option>
+                        <option value="hot_waxing">Heisswachsen</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Anmelden</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="text-center py-4 bg-light">
+        <p>© 2024 Jetstream-Service. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

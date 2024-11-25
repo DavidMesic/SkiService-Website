@@ -1,0 +1,33 @@
+### GET-Registrations
+
+GET http://localhost:5000/api/registrations
+
+
+
+### POST-Registrations
+
+POST http://localhost:5000/localhost:5000/api/registrations
+Content-Type: application/json
+  {
+    "id": "1",
+    "name": "Michael Brown",
+    "priority": "Standard"
+  }
+
+
+
+### PUT-Registrations
+
+PUT http://localhost:5000/api/registrations
+Content-Type: application/json
+  {
+    "id": "1",
+    "name": "John Updated",
+    "priority": "Standard"
+  }
+
+
+
+### DELETE-Registrations
+
+DELETE http://localhost:5000/api/registrations
